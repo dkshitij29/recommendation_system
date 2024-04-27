@@ -1,4 +1,4 @@
-# Recommendation System README
+# Recommendation System
 ---
 ## Overview
 
