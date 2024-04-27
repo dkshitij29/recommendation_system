@@ -6,7 +6,7 @@ This recommendation system is designed to suggest relevant items based on a give
 
 ## Files
 
-- `Final_project_data_importing.ipynb`: Contains the Python code for the recommendation system.
+- `Project.ipynb`: Contains the Python code for the recommendation system.
 - `merged_df.csv`: CSV file containing the dataset with item details.
 - `README.md`: This README file.
 
