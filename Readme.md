@@ -57,3 +57,6 @@ Feel free to customize this README file further based on your specific needs or 
 ## Future Improvements:
 - Designing an addon system which can categories the items into parent categories which will act as a input to the system.
 - We are specific to one data set in other works we are data specific and data driven, An data independent system can be designed using our design as a base.
+
+- Added the files for flask app 
+
