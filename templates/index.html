@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations</title>
+</head>
+<body>
+    <h1>Get Recommendations</h1>
+    <form method="post">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+
+        <label for="stars">Stars:</label><br>
+        <input type="number" id="stars" name="stars" step="0.1" min="0" max="5"><br>
+
+        <label for="reviews">Reviews:</label><br>
+        <input type="number" id="reviews" name="reviews" min="0"><br>
+
+        <label for="price">Price:</label><br>
+        <input type="number" id="price" name="price" step="0.01" min="0"><br>
+
+        <label for="seller">Seller:</label>
+        <input type="checkbox" id="seller" name="seller"><br>
+
+        <label for="bought_in_last_month">Bought In Last Month:</label><br>
+        <input type="number" id="bought_in_last_month" name="bought_in_last_month" min="0"><br>
+
+        <label for="category_name">Category:</label><br>
+        <input type="text" id="category_name" name="category_name"><br><br>
+
+        <input type="submit" value="Get Recommendations">
+    </form>
+
+    <h2>Recommended Items</h2>
+    <ul>
+        {% for item in recommendations %}
+            <li>
+                <strong>{{ item['title'] }}</strong><br>
+                Price: {{ item['price'] }}<br>
+                Category: {{ item['category_name'] }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
