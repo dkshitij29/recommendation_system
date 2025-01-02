@@ -1,2 +1,0 @@
-src/amazon_products.csv filter=lfs diff=lfs merge=lfs -text
-src/merged_amazon_data.csv filter=lfs diff=lfs merge=lfs -text
