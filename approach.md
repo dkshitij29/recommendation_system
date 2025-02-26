@@ -37,7 +37,7 @@ model.fit(X_train, y_train)
 # Test accuracy
 print(f"Model Accuracy: {model.score(X_test, y_test) * 100:.2f}%")
 ```
-✅ **Why TF-IDF + Naive Bayes?**
+**Why TF-IDF + Naive Bayes?**
 - **TF-IDF** converts text into a numerical format.
 - **Naive Bayes** is lightweight, fast, and works well for text classification.
 
@@ -95,7 +95,7 @@ def categorize_with_cache(product_name):
     return category
 ```
 
-✅ **Why Use Caching?**
+**Why Use Caching?**
 - **Reduces ML model calls**, improving response time.
 - **Caches frequently queried products**.
 - **Automatically expires old data** (set TTL in Redis).
@@ -128,7 +128,7 @@ def retrain_model(new_data):
 ---
 
 ### **Scalability Considerations**
-✅ **For large-scale websites**, consider:
+**For large-scale websites**, consider:
 - **More advanced ML models** (e.g., BERT, GPT-based embeddings).
 - **Vector search with FAISS** for category clustering.
 - **AutoML pipelines** to fine-tune models.
